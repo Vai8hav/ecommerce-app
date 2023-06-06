@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useEffect, useReducer, useState } from "react";
 import { productReducer } from '../reducer';
 export const ProductContext = createContext();
 
@@ -7,6 +7,8 @@ export const ProductProvider = ({ children }) => {
     categories: [],
     products: [],
   });
+
+  const [loading, setLoading] = useState(true);
 
   const getProductData = async () => {
     try {
@@ -18,9 +20,11 @@ export const ProductProvider = ({ children }) => {
 
       dispatch({ type: "SET_CATEGORY", payload: categoryData.categories });
       dispatch({ type: "SET_PRODUCT", payload: productData.products });
+      setLoading(false);
     } 
     catch (e) {
       console.error(e);
+      setLoading(false);
     }
   };
 
@@ -33,6 +37,9 @@ export const ProductProvider = ({ children }) => {
     return productData.products.find(({ _id }) => _id === productId);
   };
 
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <ProductContext.Provider

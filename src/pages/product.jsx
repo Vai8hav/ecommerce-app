@@ -16,7 +16,7 @@ export const Product = () => {
   const product = getProductDetail(productId);
 
   const {_id, image, title, description, price, discounted_price,
-    rating, delivery_time, availability, reviews, brand} = product;
+    rating, delivery_time, availability, reviews, brand} = product || {};
 
   const location = useLocation();
 
@@ -68,6 +68,7 @@ export const Product = () => {
 
   return (
     <>
+    {product ? (
       <div key={_id} className="alldetails">
         
         <img src={image} alt={description} />
@@ -117,6 +118,9 @@ export const Product = () => {
           </div>
         </div>
       </div>
+      ) : (
+        <p>Loading...</p>
+      )}
     </>
   );
 };
