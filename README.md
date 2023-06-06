@@ -3,6 +3,8 @@
 # ShopVerse (v1.0)
 An ecommerce app selling the best electronic items in the market. Features incorporated in the application:
 
+## Features:
+
 - Filtering (based on price, sort by, category, rating and search)
 - Authentication (Login, Logout, Sign In, Sign Out, Profile)
 - Cart & Wishlist Management
@@ -11,7 +13,9 @@ An ecommerce app selling the best electronic items in the market. Features incor
 - Checkout & Payment Integration
 - Pages: Home, ProductListing, Product, Cart, Wishlist, Checkout, Profile, 404 Not Found
 
-Tech Used:
+
+## Tech Used:
+
 - React JS
 - Vanilla CSS
 - useReducer, useContext, useState, useParams, useNavigate, useEffect
