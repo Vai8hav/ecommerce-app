@@ -1,0 +1,84 @@
+
+.alldetails {
+  display: flex;
+  margin-top: 5rem;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+  font-size: 1.1rem;
+}
+
+.alldetails img {
+  width: 30rem;
+  max-height: 30rem;
+  object-fit: contain;
+}
+
+.alldetails .rating {
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0rem 0.5rem;
+  border-radius: 0.2rem;
+  height: 2rem;
+}
+
+.alldetails .rating-and-reviews {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.alldetails .cardinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.alldetails .prices {
+  display: flex;
+  gap: 1rem;
+}
+
+.alldetails .original-price {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.alldetails .disc-price {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.alldetails .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.alldetails .buttons * {
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.alldetails .addtocart {
+  background-color: black;
+  color: #faddff;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  border: none;
+}
+
+.alldetails .addtowishlist {
+  background-color: #faddff;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  border: 0.5px solid
+}
+
+.alldetails .description {
+  line-height: 2rem;
+}

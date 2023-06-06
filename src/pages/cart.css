@@ -1,0 +1,30 @@
+.cart-detail {
+  display: flex;
+  margin: 2rem auto;
+  width: 80%;
+  gap: 2rem;
+}
+
+.empty-cart {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.cart-heading {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.product-card-cart-list {
+  width: 50%;
+}
+
+.product-card-cart-list li {
+  display: flex;
+  border-radius: 0.3rem;
+  border: 1px solid lightgrey;
+  padding: 2rem;
+  margin: 0rem 0rem 1rem 0rem;
+}

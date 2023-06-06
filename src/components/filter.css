@@ -1,0 +1,28 @@
+
+.filter-box {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: 20rem;
+  position: fixed;
+  margin-top: -2rem;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-header button {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.range-label {
+  display: flex;
+  justify-content: space-between;
+}

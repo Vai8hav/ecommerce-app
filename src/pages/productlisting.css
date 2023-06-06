@@ -1,0 +1,29 @@
+
+.listingpage {
+  display: flex;
+  width: 100%;
+}
+
+section {
+  padding: 2rem;
+}
+
+.product-cards {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.empty {
+  width: 20rem;
+}
+
+.listing .listing-heading {
+  margin-bottom: 1rem;
+}
+
+.product-count {
+  color: grey;
+  font-weight: 400;
+}

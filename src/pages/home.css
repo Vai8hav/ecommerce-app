@@ -1,0 +1,139 @@
+.home .resize {
+  width: 70%;
+}
+
+.home {
+  margin: auto;
+}
+
+.home .heading {
+  width: 100%;
+  background-color: #faddff;
+  padding: 4rem 0rem 8rem 0rem;
+}
+
+.home h1 {
+  font-family: Suntime Seasons;
+  text-align: center;
+  margin: auto;
+  font-size: 10rem;
+  margin: 5rem 0rem 2rem 0rem;
+}
+
+.home .heading .scroll-button {
+  margin: auto;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: black;
+  width: fit-content;
+  color: #faddff;
+  font-family: sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home h2 {
+  text-align: center;
+  font-family: Suntime Seasons;
+  font-size: 4rem;
+}
+
+.home img {
+  width: 100%;
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  margin: 0rem 0rem 5rem 0rem;
+  animation: slide 9s infinite;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 5rem;
+  height: 35rem;
+}
+
+.smooth-card {
+  position: relative;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: white;
+  transition: 0.4s ease-in-out;
+  flex: 1px;
+  height: fit-content;
+}
+
+.smooth-card:nth-child(1) {
+  background-color: #e8d8ff;
+}
+
+.smooth-card:nth-child(2) {
+  background-color: #e2dfff;
+}
+
+.smooth-card:nth-child(3) {
+  background-color: #faddff;
+}
+
+.smooth-card:nth-child(4) {
+  background-color: #dcecff;
+}
+
+.smooth-card:hover {
+  flex: 1.25;
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  margin: 3rem 0rem -5rem 0rem;
+}
+
+footer ul {
+  display: flex;
+  padding: 2.5rem;
+  justify-content: center;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 0rem 1.5rem;
+  color: white;
+}
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    45% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,59 @@
+.checkout-address-header {
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
+.checkout-address {
+  width: 70%;
+  margin: auto;
+}
+
+.checkout-address li {
+  border: 1px solid lightgray;
+  display: flex;
+  border-radius: 0.5rem;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.checkout-address li input {
+  cursor: pointer;
+}
+
+.checkout-address li label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-add-address {
+  font-size: 1rem;
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin: 2rem auto;
+  background-color: #faddff;
+}
+
+.remove-address {
+  height: fit-content;
+  padding: 0.5rem;
+  margin-top: 1.1rem;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.3rem;
+  background-color: red;
+  cursor: pointer;
+}
+
+.empty-address {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #999;
+  margin: 3rem 0;
+}

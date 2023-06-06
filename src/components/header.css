@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Suntime Seasons;
+  src: url(/src/fonts/suntime_seasons.otf);
+}
+
+nav {
+  display: flex;
+  background-color: black;
+  padding: 1rem 0.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.brand {
+  margin: 0rem 0.5rem;
+  text-decoration: none;
+  font-family: Suntime Seasons;
+  color: #faddff;
+}
+
+.search-input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 50%;
+  outline: none;
+  background-color: white;
+  font-size: 1.05rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1.5rem;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.counter-notif {
+  position: relative;
+  font-size: 0.8rem;
+  top: -1.2rem;
+  padding: 0.1rem 0.4rem;
+  right: 5px;
+  background-color: #faddff;
+  border-radius: 50%;
+  color: black;
+}
+
+.counter-notif::after {
+  content: attr(value);
+}
+
+.btn-header-login {
+  padding: 0.4rem 1rem;
+  border: none;
+  background-color: white;
+  border-radius: 0.3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
