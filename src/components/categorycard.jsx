@@ -20,7 +20,7 @@ export function CategoryCard() {
       {categories.map(({id, categoryImage, categoryName, description}) => (
 
         <div key={id} className='smooth-card' onClick={() => categoryHandler(categoryName)}>
-          <img src={categoryImage} />
+          <img src={categoryImage} alt={description}/>
           <h3>{categoryName}</h3>
           <p>{description}</p>
         </div>

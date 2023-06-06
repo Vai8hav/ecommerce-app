@@ -38,15 +38,15 @@ export const Home = () => {
       <footer>
         <ul>
           <li>
-            <a href = 'https://www.linkedin.com/in/vaibhavbasantani' target='_blank'><img className='resize' src={linkedin} alt="" /></a>
+            <a href = 'https://www.linkedin.com/in/vaibhavbasantani' target='_blank' rel="noreferrer"><img className='resize' src={linkedin} alt="" /></a>
           </li>
 
           <li>
-            <a href = 'https://twitter.com/0xbasantani' target='_blank'><img className='resize' src={twitter} alt="" /></a>
+            <a href = 'https://twitter.com/0xbasantani' target='_blank' rel="noreferrer"><img className='resize' src={twitter} alt="" /></a>
           </li>
 
           <li>
-            <a href = 'https://www.instagram.com/vaibhav_basantani' target='_blank'><img className='resize' src={instagram} alt="" /></a>
+            <a href = 'https://www.instagram.com/vaibhav_basantani' target='_blank' rel="noreferrer"><img className='resize' src={instagram} alt="" /></a>
           </li>
         </ul>
       </footer>

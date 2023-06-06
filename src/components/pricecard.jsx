@@ -13,9 +13,17 @@ export const PriceCard = () => {
   const location = useLocation();
   const navigate = useNavigate();
   
-  const orderHandler = (orderRes) => {
+  const orderHandler = (order) => {
     const date = new Date();
     const selectedAddress = address.find(({ active }) => active);
+    
+    orderHistoryHandler(
+      order.razorpay_payment_id,
+      getTotalPrice() + 99,
+      date.toString(),
+      selectedAddress,
+      cart
+    );
 
     success(`Payment Successfull!`);
     removeMultipleFromCart(cart);
