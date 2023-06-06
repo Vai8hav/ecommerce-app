@@ -1,6 +1,6 @@
-## E-Commerce App
+### E-Commerce App
 
-# ShopVerse (V 1.0)
+# ShopVerse (v1.0)
 An ecommerce app selling the best electronic items in the market. Features incorporated in the application:
 
 - Filtering (based on price, sort by, category, rating and search)
@@ -9,3 +9,11 @@ An ecommerce app selling the best electronic items in the market. Features incor
 - React Routing
 - Address Management
 - Checkout & Payment Integration
+- Pages: Home, ProductListing, Product, Cart, Wishlist, Checkout, Profile, 404 Not Found
+
+Tech Used:
+- React JS
+- Vanilla CSS
+- useReducer, useContext, useState, useParams, useNavigate, useEffect
+- React Router
+- Razorpay payment gateway
