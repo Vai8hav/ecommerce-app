@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 export const PriceCard = () => {
   const {cart, clearCart, getTotalPrice, getTotalDiscount, removeMultipleFromCart} = useContext(CartContext);
 
-  const { address } = useContext(AuthContext);
+  const { address, orderHistoryHandler } = useContext(AuthContext);
 
   const location = useLocation();
   const navigate = useNavigate();

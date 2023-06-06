@@ -22,6 +22,7 @@ export const AuthProvider = ({ children }) => {
         user_address: "A7/12th Street, Roenshrine",
       },
     ],
+    orderHistory: [],
     token: "",
   });
 
@@ -190,12 +191,33 @@ export const AuthProvider = ({ children }) => {
     dispatch({ type: "REMOVE_ADDRESS", payload: addId });
   };
 
+  const orderHistoryHandler = (
+    payment_id,
+    amount,
+    date,
+    address,
+    orderItems
+  ) => {
+    dispatch({
+      type: "ADD_ORDER",
+      payload: {
+        orderId: Math.floor(Math.random() * 100),
+        orderDate: date,
+        cart: orderItems,
+        deliveryAddress: address,
+        paymentId: payment_id,
+        totalAmount: amount,
+      },
+    });
+  };
+
+
   return (
     <AuthContext.Provider
       value={{ logoutHandler, signUpHandler, addAddressHandler, selectAddressHandler,
-        removeAddressHandler, setLoginSuccess, checkLogin, authenticateUser,
-        user: userData.user, address: userData.address,
-      }}>
+        removeAddressHandler, setLoginSuccess, orderHistoryHandler, checkLogin, authenticateUser,
+        user: userData.user, address: userData.address, orderHistory: userData.orderHistory}}>
+
       {children}
     </AuthContext.Provider>
   );
