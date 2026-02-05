@@ -82,3 +82,155 @@
 .alldetails .description {
   line-height: 2rem;
 }
+
+.ai-assistant,
+.compare-section {
+  margin: 3rem auto;
+  max-width: 70rem;
+  padding: 2rem;
+  background: #f9f5ff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(31, 31, 31, 0.08);
+}
+
+.ai-header,
+.compare-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.ai-header p,
+.compare-header p {
+  margin: 0.4rem 0 0;
+  color: #555;
+}
+
+.ai-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.ai-tags button {
+  background: white;
+  border: 1px solid #e4d7ff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ai-body {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ai-body textarea {
+  flex: 1;
+  min-width: 16rem;
+  padding: 0.9rem;
+  border-radius: 0.8rem;
+  border: 1px solid #e4d7ff;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.ai-submit {
+  background: #2f1c6a;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ai-response {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  background: white;
+  border-radius: 0.8rem;
+  border: 1px solid #efe6ff;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.compare-item {
+  display: flex;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid #e4d7ff;
+  background: white;
+  cursor: pointer;
+}
+
+.compare-item input {
+  accent-color: #2f1c6a;
+}
+
+.compare-item.active {
+  border-color: #2f1c6a;
+  box-shadow: 0 6px 14px rgba(47, 28, 106, 0.15);
+}
+
+.compare-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.compare-results {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.compare-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.2rem;
+}
+
+.compare-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+  border: 1px solid #efe6ff;
+}
+
+.compare-card h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.compare-card ul {
+  margin: 0 0 0.8rem 1.2rem;
+}
+
+.compare-price {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.compare-verdict {
+  background: #2f1c6a;
+  color: white;
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+}
+
+.compare-empty {
+  margin-top: 1rem;
+  color: #666;
+}
