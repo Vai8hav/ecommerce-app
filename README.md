@@ -21,3 +21,7 @@ An ecommerce app selling the best electronic items in the market. Features incor
 - useReducer, useContext, useState, useParams, useNavigate, useEffect
 - React Router
 - Razorpay payment gateway
+
+## Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for Vercel and Netlify steps.
